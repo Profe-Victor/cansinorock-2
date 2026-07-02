@@ -1,11 +1,14 @@
 const express = require("express");
 require("./config/db");
+const contactoRoutes = require("./routes/contactoRoutes");
+const cors = require("cors");
 
 const eventoRoutes = require("./routes/eventoRoutes");
 
 const app = express();
 
 // Middleware para procesar JSON
+app.use(cors());
 app.use(express.json());
 
 // Ruta principal
@@ -18,5 +21,5 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/eventos", eventoRoutes);
-
+app.use("/api/contacto", contactoRoutes);
 module.exports = app;
