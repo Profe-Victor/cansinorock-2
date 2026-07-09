@@ -22,4 +22,9 @@ app.get("/", (req, res) => {
 
 app.use("/api/eventos", eventoRoutes);
 app.use("/api/contacto", contactoRoutes);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor escuchando en el puerto ${PORT}`);
+});
 module.exports = app;
