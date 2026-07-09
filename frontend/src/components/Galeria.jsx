@@ -2,45 +2,61 @@ function Galeria() {
   const imagenes = [
     {
       titulo: "Fotografía oficial",
-      imagen: "/src/assets/images/hero-cansinorock.jpg",
+      imagen: "/images/hero-cansinorock.jpg",
     },
 
     {
       titulo: "Estudio CansinoRock",
-      imagen: "/src/assets/images/estudio-cansino.jpg",
+      imagen: "/images/estudio-cansino.jpg",
     },
 
     {
       titulo: "Primera presentación CansinoRock",
-      imagen: "/src/assets/images/presentacionCero.jpg",
+      imagen: "/images/presentacionCero.jpg",
     },
     {
       titulo: "Presentación Aculco",
-      imagen: "/src/assets/images/presentacionAculco.jpg",
+      imagen: "/images/presentacionAculco.jpg",
     },
     {
       titulo: "Edu Bateria",
-      imagen: "/src/assets/images/Edu.jpg",
+      imagen: "/images/Edu.jpg",
     },
     {
       titulo: "Javi y Joel",
-      imagen: "/src/assets/images/javi&joel.jpg",
+      imagen: "/images/javi&joel.jpg",
     },
     {
       titulo: "Presentación Huichapan",
-      imagen: "/src/assets/images/presentacion1.jpg",
+      imagen: "/images/presentacion1.jpg",
     },
     {
       titulo: "Presentación Nopala",
-      imagen: "/src/assets/images/presentacion2.jpg",
+      imagen: "/images/presentacion2.jpg",
     },
     {
       titulo: "Presentación Nopala",
-      imagen: "/src/assets/images/presentacion3.jpg",
+      imagen: "/images/presentacion3.jpg",
     },
     {
       titulo: "Evento privado",
-      imagen: "/src/assets/images/presentacionMary2.jpg",
+      imagen: "/images/presentacionMary2.jpg",
+    },
+    {
+      titulo: "Monty",
+      imagen: "/images/montyCantando.jpg",
+    },
+    {
+      titulo: "Cumpleaños Julio Revueltas",
+      imagen: "/images/cumpleJulio.jpg",
+    },
+    {
+      titulo: "Sesión de fotos",
+      imagen: "/images/sesionDoye.jpg",
+    },
+    {
+      titulo: "Ensayo",
+      imagen: "/images/teclados.jpg",
     },
   ];
 
