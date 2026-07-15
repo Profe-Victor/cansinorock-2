@@ -40,12 +40,12 @@ function Integrantes() {
 
     {
       nombre: "Monty",
-      instrumento: "Teclados",
+      instrumento: "Vocalista",
       icono: faMicrophone,
       descripcion: "La voz del rock Clasico en su maxima expresión.",
     },
     {
-      nombre: "Mike",
+      nombre: "Mike Sax",
       instrumento: "Saxofón",
       icono: faMusic,
       descripcion: "La potencia viva del Sax.",
