@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import api from "../services/api";
 
 const nuevo = { titulo: "", fecha: "", hora: "", lugar: "", descripcion: "" };
@@ -10,6 +10,7 @@ const campos = [
 ];
 
 export default function AdministrarEventos() {
+  const encabezado = useRef(null);
   const [eventos, setEventos] = useState([]);
   const [formulario, setFormulario] = useState(nuevo);
   const [editando, setEditando] = useState(null);
@@ -24,6 +25,7 @@ export default function AdministrarEventos() {
   }
 
   useEffect(() => {
+    encabezado.current?.focus();
     const controlador = new AbortController();
     consultar(controlador.signal).catch(() => {
       if (!controlador.signal.aborted) setError("No se pudo cargar la agenda.");
@@ -90,7 +92,8 @@ export default function AdministrarEventos() {
   return (
     <main className="container py-4">
       <a href="#inicio">Volver a CansinoRock</a>
-      <h1 className="my-3">Administración de eventos</h1>
+      <h1 className="my-3" ref={encabezado} tabIndex={-1}>Administración de eventos</h1>
+      <p>Consulta la agenda y usa la clave de administración para guardar o eliminar eventos.</p>
 
       {error && <div className="alert alert-danger" role="alert">{error}</div>}
       {aviso && <div className="alert alert-success" role="status">{aviso}</div>}
